@@ -1,0 +1,42 @@
+<b><%= @club_name %></b><br/>
+<% if @club_address1.present? %><%= @club_address1 %><br/><% end %>
+<% if @club_address2.present? %><%= @club_address2 %><br/><% end %>
+<% if @club_address3.present? %><%= @club_address3 %><br/><% end %>
+<% if @club_phone.present? %><%= @club_phone %><br/><% end %> 
+
+<hr/>
+
+<h1>RECEIPT</h1>
+
+<b>
+  Program:
+</b>
+<%= @program_name %>
+<br/>
+<b>
+  Amount Received:
+</b>
+<%= @amount_received %>
+<br/>
+<b>
+  Date Received:
+</b>
+<%= @date_received %>
+<br/>
+<b>
+  Eligible Amount:
+</b>
+<%= @amount_eligible %>
+<br/>
+<b>
+  Payer:
+</b>
+<%= @payer_name %>
+<br/>
+<b>
+  Participant:
+</b>
+<%= @participant_name %>
+<br/>
+<br/>
+<hr/>

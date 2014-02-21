@@ -1,0 +1,15 @@
+Attached is the tax receipt for <%= @participant_name %> for the <%= @program_name %> program.
+
+If you have any questions about this receipt, please contact us by replying to this email.
+
+Regards,
+
+<%= @club_name %>
+
+Email: <%= @club_contact_email %><% unless @club_phone.nil? %>
+Phone: <%= @club_phone %><% end %>
+
+Mailing Address:
+<%= @club_address1 %><% if @club_address2 %>
+<%= @club_address2 %><% end %><% if @club_address3 %>
+<%= @club_address3 %><% end %>
